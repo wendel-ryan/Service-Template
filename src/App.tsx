@@ -1,10 +1,12 @@
 import './App.css'
+import Navbar from './components/navbar.tsx'
+
 
 function App() {
-
+  let sections = ['About','Services','Location','Contact']
   return (
     <>
-      <h1>Something Static</h1>
+      <Navbar sections={sections}/>
     </>
   )
 }
