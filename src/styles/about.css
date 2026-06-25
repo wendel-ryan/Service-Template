@@ -1,0 +1,175 @@
+.about{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -1px;
+    background-color: white;
+}
+
+.poster{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+}
+
+.storeFront{
+    width: 100vw;
+    height: 50vw;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.slogan{
+    height: 7.5vw;
+    width: 80vw;
+    margin: -10vw 10vw 0 10vw;
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heroTitle{
+    color: white;
+    height: fit-content;
+    width: fit-content;
+}
+
+.heroSubTitle{
+    color: white;
+    height: fit-content;
+    width: fit-content;
+}
+
+.aboutInfo{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 80vw;
+    margin: 5vh 10vw;
+    border-top: 2px solid lightgrey;
+}
+
+.owner{
+    height: 50vh;
+    width: auto;
+    margin: 5vh 2.5vw;
+}
+
+.business{
+    flex-grow: 1;
+    margin: 5vh 2.5vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.aboutUs{
+    height: 45px;
+    width: fit-content;
+    color: black;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 2vh;
+}
+
+.serving{
+    margin-bottom: 2vh;
+    height: 45px;
+    width: fit-content;
+    color: rgb(34, 85, 34);
+    border-bottom: 2px solid lightgrey;
+}
+
+.mission{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    color: black;
+}
+
+.qualities{
+    flex-grow: 1;
+    margin-top: 1vh;
+    background-color: rgb(240, 235, 220);
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.qualities > div + div {
+    border-left: 2px solid lightgrey;
+}
+
+.quality{
+    width: 33.3%;
+    height: fit-content;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    width: 40%;
+    height: auto;
+}
+
+.qualityText{
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .poster{
+        height: 80vw;
+        align-items: center;
+    }
+
+    .storeFront{
+        width: 120vw;
+        height: 80vw;
+        margin-left: -10vw 0;
+    }
+
+    .slogan{
+        width: 100%;
+        margin: -17vw 0 0 0;
+    }
+
+    .aboutInfo{
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        margin: 2.5vh 5vw;
+    }
+
+    .owner{
+        width: 50%;
+        height: auto;
+        margin: 2.5vh 2.5vw;
+    }
+
+    .business{
+        align-items: center;
+        text-align: center;
+        margin: 2.5vh 2.5vw;
+    }
+
+    .aboutUs{
+        height: 35px;
+        margin-bottom: 1vh;
+    }
+
+    .serving{
+        height: 35px;
+        margin-bottom: 1vh;
+    }
+}
